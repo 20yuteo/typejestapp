@@ -9,5 +9,6 @@ module.exports = {
     "!**/node_modules/**",
   ],
   coverageDirectory: 'coverage_dir',
-  coverageReporters: ["html"]
+  coverageReporters: ["html"],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
 };
