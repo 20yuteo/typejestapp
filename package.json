@@ -14,7 +14,7 @@
         "ts-jest": "^28.0.5"
     },
     "scripts": {
-        "test": "jest --coverage"
+        "test": "tsc src/index.ts && jest --coverage"
     },
     "author": "",
     "license": "ISC"
