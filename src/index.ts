@@ -1,4 +1,10 @@
-const message = 'hello world!'
+export class Doller {
+    amount: number;
 
-console.log(message)
-export default message
+    constructor(amount: number) {
+        this.amount = 10;
+    }
+
+    times(multiplier: number) {
+    }
+}
