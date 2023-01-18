@@ -1,9 +1,11 @@
 import { Doller } from "../src/index";
 
-test('money test', () => {
-    let five: Doller = new Doller(5);
-    five.times(2);
-    expect(five.amount).toBe(10);
-    five = five.times(3);
-    expect(five.amount).toBe(15);
-})
+describe("Doller", () => {
+    test('money test', () => {
+        const five: Doller = new Doller(5);
+        let product = five.times(2);
+        expect(product.amount).toBe(10);
+        product = five.times(3);
+        expect(product.amount).toBe(15);
+    });
+});

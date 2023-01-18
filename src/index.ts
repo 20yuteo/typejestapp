@@ -6,6 +6,6 @@ export class Doller {
     }
 
     times(multiplier: number): Doller {
-        return new Doller(this.amount *= multiplier);
+        return new Doller(this.amount * multiplier);
     }
 }
