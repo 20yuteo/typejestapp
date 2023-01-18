@@ -2,9 +2,10 @@ export class Doller {
     amount: number;
 
     constructor(amount: number) {
-        this.amount = 10;
+        this.amount = amount;
     }
 
     times(multiplier: number) {
+        this.amount *= multiplier;
     }
 }
