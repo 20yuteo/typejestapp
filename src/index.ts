@@ -5,7 +5,7 @@ export class Doller {
         this.amount = amount;
     }
 
-    times(multiplier: number) {
-        this.amount *= multiplier;
+    times(multiplier: number): Doller {
+        return new Doller(this.amount *= multiplier);
     }
 }
