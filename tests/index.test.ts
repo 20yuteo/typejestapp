@@ -8,4 +8,9 @@ describe("Doller", () => {
         product = five.times(3);
         expect(product.amount).toBe(15);
     });
+
+    test("equal", () => {
+        expect(new Doller(5).equals(new Doller(5))).toBe(true);
+        expect(new Doller(5).equals(new Doller(6))).toBe(false);
+    });
 });
